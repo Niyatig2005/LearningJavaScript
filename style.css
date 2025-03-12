@@ -1,3 +1,7 @@
+body{
+    background-color: #b7e8d8;
+}
+
 .container{
     margin: 0 auto;
     max-width: 400px;
@@ -10,21 +14,38 @@
 .title{
     font-size: 36px;
     margin-bottom: 10px;
-    color: #ff5100;
+    color: #d52a87;
 }
 
 .timer{
     font-size: 72px;
-    color: #ff5100;
+    color: #d52a87;
 }
 
 #start{
     font-size: 25px;
+    background-color: green;
+    margin-bottom: 10px;
 }
 
-.button-wrapper{
-    font-size: 18px;
-    padding: 20px 20px;
-    margin: 10px;
+#stop{
+    background-color: red;
+}
+
+#reset{
+    background-color: black;
+}
+
+button{
+    cursor: pointer;
+    text-transform: uppercase;
     color: white;
+    padding: 15px 20px;
+    border-style: solid;
+    border-color: #b7e8d8;
+    border-radius: 100px;
+}
+
+button:hover{
+    border-color: gold;
 }
