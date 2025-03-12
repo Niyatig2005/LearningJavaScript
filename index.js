@@ -22,7 +22,7 @@ function startTimer(){
             clearInterval(interval);
             alert("Break time!");
             timeLeft = 1500;
-            updateTimer
+            updateTimer();
         }
     }, 1000);
 }
