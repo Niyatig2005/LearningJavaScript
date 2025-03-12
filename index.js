@@ -3,16 +3,37 @@ const stopEl = document.getElementById("stop")
 const resetEl = document.getElementById("reset")
 const timerEl = document.getElementById("timer")
 
+let interval;
+let timeLeft = 1500;
+
+function updateTimer(){
+    let minutes = Math.floor(timeLeft/60)
+    let seconds = timeLeft % 60;
+    let formattedTime = `${minutes.toString().padStart(2,"0")}:${seconds.toString().padStart(2, "0")}`;
+
+    timerEl.innerHTML = formattedTime;
+}
+
 function startTimer(){
-    console.log("start");
+    interval = setInterval(() => {
+        timeLeft--;
+        updateTimer();
+        if(timeLeft === 0){
+            clearInterval(interval);
+            alert("Break time!");
+            timeLeft = 1500;
+            updateTimer
+        }
+    }, 1000);
 }
 
 function stopTimer(){
-    console.log("stop");
+    clearInterval(interval);
 }
 
 function resetTimer(){
-    console.log("reset");
+    timeLeft = 1500;
+    updateTimer();
 }
 
 startEl.addEventListener("click", startTimer)
