@@ -1,0 +1,30 @@
+.container{
+    margin: 0 auto;
+    max-width: 400px;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+
+.title{
+    font-size: 36px;
+    margin-bottom: 10px;
+    color: #ff5100;
+}
+
+.timer{
+    font-size: 72px;
+    color: #ff5100;
+}
+
+#start{
+    font-size: 25px;
+}
+
+.button-wrapper{
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 10px;
+    color: white;
+}
