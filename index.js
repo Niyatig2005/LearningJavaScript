@@ -32,6 +32,7 @@ function stopTimer(){
 }
 
 function resetTimer(){
+    resetTimer();
     timeLeft = 1500;
     updateTimer();
 }
